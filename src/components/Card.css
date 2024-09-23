@@ -1,0 +1,49 @@
+.card {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    max-width: 300px; /* Maximum width of the card */
+    width: 100%; /* Allow it to scale down on smaller screens */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+    width: 100%; /* Full width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.card-title {
+    font-size: 1.5em; /* Adjust title size */
+    margin: 10px 0; /* Space above and below the title */
+}
+
+.card-description {
+    font-size: 1em; /* Description font size */
+    color: #666; /* Description color */
+}
+.like-button {
+    font-size: 0.7rem; /* Smaller text size */
+    padding: 3px 6px; /* Reduced padding */
+    border: none; /* Remove default border */
+    background: transparent; /* Transparent background */
+    cursor: pointer; /* Pointer cursor */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+}
+
+.like-button.liked {
+    color: red; /* Change color when liked */
+}
+
+.like-button::before {
+    content: '❤️'; /* Heart icon */
+    font-size: 0.6rem; /* Smaller size for the icon */
+    margin-right: 3px; /* Space between icon and text */
+}
